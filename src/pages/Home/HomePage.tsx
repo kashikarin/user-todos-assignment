@@ -7,6 +7,7 @@ export function HomePage() {
     const { users } = useUsers()
     const { selectedId, toggleSelectedUser } = useUserSelection()
 
+    // throw new Error("Testing ErrorPage")
     return (
         <div className="app">
             <div className="main-container">

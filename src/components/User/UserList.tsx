@@ -2,9 +2,9 @@ import type { User } from "../../types"
 import { UserCard } from "./UserCard"
 
 interface Props {
-    users: User[];
-    selectedUserId: number | null;
-    onSelectUser: (id: number) => void;
+    users: User[]
+    selectedUserId: number | null
+    onSelectUser: (id: number) => void
 }
 
 export function UserList({ users, selectedUserId, onSelectUser }: Props) {

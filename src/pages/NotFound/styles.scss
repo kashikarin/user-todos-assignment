@@ -1,0 +1,27 @@
+.not-found-page {
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        margin-block-end: 1rem;
+        color: $clr-secondary;
+    }
+
+    p {
+        margin-block-end: 2rem;
+        color: $text-light;
+
+    }
+
+    a{
+        padding: 0.6rem 1rem;
+        background-color: $clr-primary;
+        color: $text-main;
+        border-radius: $radius;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background: darken($clr-primary, 8%);
+        }
+    }
+}
