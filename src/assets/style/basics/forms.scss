@@ -1,0 +1,36 @@
+button {
+	border: none;
+	background-color: #6F8F7B;
+	color: white;
+	padding: 0.5rem 1rem;
+  	margin: 0.3rem 0;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+button:hover, 
+.btn:hover {
+	background-color: #5E7C6A;
+}
+
+.btn-link {
+	border: none;
+	background-color: transparent;
+	color: #6F8F7B;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+.btn-link:hover {
+	color: #5E7C6A;
+}
+
+form > * {
+    display: block;
+    margin: 0.8rem 0;
+    width: 100%;
+}

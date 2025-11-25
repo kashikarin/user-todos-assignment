@@ -1,0 +1,15 @@
+/* Setup */
+
+@import "./setup/variables.scss";
+
+/* Basics */
+@import "./basics/base.scss";
+@import "./basics/layout.scss";
+@import "./basics/forms.scss";
+
+
+/* pages */
+
+/* Components */
+@import "../../components/User/styles.scss";
+@import "../../components/Todo/styles.scss";

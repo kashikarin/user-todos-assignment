@@ -1,0 +1,51 @@
+// Layout column variables
+$layout-columns-mobile: 1rem 1fr 1rem;
+
+$layout-columns-600: 
+    minmax(20px, 1fr)
+    minmax(auto, 1000px)
+    minmax(20px, 1fr);
+
+$layout-columns-1200: 
+    minmax(20px, 1fr)
+    minmax(auto, 1400px)
+    minmax(20px, 1fr);
+
+//layout
+.main-container {
+    display: grid;
+    grid-template-columns: $layout-columns-mobile;
+    gap: 0;
+
+    @media (min-width: 600px) {
+        grid-template-columns: $layout-columns-600;
+    }
+
+  // ≥ 1200px
+    @media (min-width: 1200px) {
+        grid-template-columns: $layout-columns-1200;
+    }
+
+    & > main {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        padding-block: 5rem;
+
+        & > * {
+            grid-column: 2;
+        }
+    }
+
+    & > .full {
+        grid-column: 1 / -1;
+    }
+}
+
+//card grid
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.2rem;
+    width: 100%;
+}
